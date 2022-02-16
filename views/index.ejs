@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List Recreate</title>
+  </head>
+  <body>
+
+    <h1><%= currentDay %></h1>
+
+    <ul>
+      <% for (var i=0; i < currentItems.length; i++) { %>
+        <li><%= currentItems[i] %></li>
+    <%  } %>
+    </ul>
+
+    <form class="" action="/" method="post">
+      <input type="text" name="newItem">
+      <button type="submit" name="button">Add Item</button>
+    </form>
+
+  </body>
+</html>
